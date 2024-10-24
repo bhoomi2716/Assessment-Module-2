@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .outermain {
+            width: 30vw;
+            border: none;
+            border: 3px solid gray;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: whitesmoke;
+        }
+
+        .outer1,
+        .outer2 {
+            display: grid;
+        }
+
+        .outer2 {
+            margin-top: 22px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+
+        button,
+        input {
+            border-radius: 90px;
+            padding: 10px;
+            font-weight: 600;
+            border: 1px solid rgba(128, 128, 128, 0.799);
+        }
+
+        .icon {
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+
+        .facebook {
+            background-color: rgb(79, 79, 158);
+            color: white;
+            border: none;
+            width: 120px;
+            margin-right: 20px;
+        }
+
+        .twitter {
+            background-color: rgba(0, 184, 245, 0.779);
+            color: white;
+            border: none;
+            width: 120px;
+            margin-right: 20px;
+        }
+
+        .google {
+            background-color: rgba(253, 51, 51, 0.782);
+            color: white;
+            border: none;
+            width: 120px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(6, 193, 6);
+            border: none;
+            color: white;
+            padding: 15px;
+        }
+
+        .contant {
+            width: 30vw;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0px;
+            width: 30vw;
+        }
+
+        hr {
+            color: black;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="outermain">
+
+        <div class="outer1">
+
+            <h1>Create An Account</h1>
+
+            <div class="contant"> sign up with your social media account or email address </div>
+
+            <br>
+
+            <div class="btn">
+
+                <button class="facebook">
+                    <i class="fa-brands fa-facebook-f icon"></i>
+                    Facebook
+                </button>
+
+                <button class="twitter">
+                    <i class="fa-brands fa-twitter icon"></i>
+                    Twitter
+                </button>
+
+                <button class="google">
+                    <i class="fa-brands fa-google icon"></i>
+                    Google
+                </button>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="outer2">
+
+            <input type="text" placeholder="Username">
+            <br>
+            <input type="email" placeholder="Email Address">
+            <br>
+            <input type="password" placeholder="Password">
+            <br>
+            <input type="password" placeholder="Confirm Password">
+            <br>
+            <input type="submit" value="Sign Up">
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<!--Done-->

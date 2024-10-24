@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gird Layout</title>
+    <style>
+
+        *{
+            border: none;
+        }
+        .outer {
+            height: 50%;
+            width: 30%;
+            border: 3px solid;
+            display: grid;
+            text-align: center;
+            border-color: rgb(154, 195, 227);
+            color: white;
+        }
+
+        .inner {
+            display: flex;
+            border-color: rgb(154, 195, 227);
+        }
+
+        .left,
+        .middle,
+        .right {
+            height: 150px;
+            border: 3px solid;
+            border-color: rgb(154, 195, 227);
+            align-content: center;
+        }
+
+        .top {
+            height: 50px;
+            width: 99.35%;
+            border: 3px solid;
+            float: top;
+            background-color: rgb(0, 73, 157);
+            border-color: rgb(154, 195, 227);
+            align-content: center;
+        }
+
+        .bottom {
+            height: 50px;
+            width: 99.35%;
+            border: 3px solid;
+            float: bottom;
+            background-color: rgb(0, 73, 157);
+            border-color: rgb(154, 195, 227);
+            align-content: center;
+        }
+
+        .right {
+            flex-grow: 1;
+            background-color: rgb(0, 119, 255);
+        }
+
+        .left {
+            flex-grow: 1;
+            background-color: rgb(0, 119, 255);
+        }
+
+        .middle {
+            flex-grow: 3;
+            background-color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="outer">
+
+        <div class="top">
+            <b>Holy Grail Layout</b>
+        </div>
+
+        <div class="inner">
+            <div class="left">
+                <b>Nav&nbsp;&nbsp;&nbsp;&nbsp;</b>
+            </div>
+
+            <div class="middle">
+                <b>Main content</b>
+            </div>
+
+            <div class="right">
+                <b>Sidebar</b>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <b>Footer</b>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<!--Done-->

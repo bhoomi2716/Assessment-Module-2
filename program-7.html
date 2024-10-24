@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo Class</title>
+    <style>
+
+        .container {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .btn {
+            padding: 15px;
+            font-weight: bold;
+            margin: 20px;
+            border-radius: 5px;
+            width: 100px;
+            height: 60px;
+            background-color:lightblue;
+            align-items: center;
+            text-align: center;
+        }
+
+        .btn:hover{
+            background-color: rgb(121, 169, 185);
+            cursor: pointer;
+        }
+
+        .btn:active{
+            background-color: rgb(87, 133, 148);
+            transform: scale(0.90);
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <button class="btn subscribe">Subscribe</button>
+        <button class="btn join">Join</button>
+        <button class="btn tweet">Tweet</button>
+    </div>
+</body>
+</html>
