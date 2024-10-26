@@ -4,25 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gird Layout</title>
-    <style>
+    <title>Grid Layout</title>
 
-        *{
-            border: none;
-        }
+    <style>
         .outer {
             height: 50%;
             width: 30%;
-            border: 3px solid;
+            margin: 50px auto;
             display: grid;
-            text-align: center;
-            border-color: rgb(154, 195, 227);
-            color: white;
         }
 
-        .inner {
-            display: flex;
+        .top:nth-child(1) {
+            grid-row: 1/2;
+            grid-column: 1/5;
+        }
+
+        .left:nth-child(2){
+            grid-row: 2/4;
+            grid-column: 1/2;
+            height: 150px;
+            border: 3px solid;
             border-color: rgb(154, 195, 227);
+            align-content: center;
+            text-align: center;
+        }
+
+        .middle:nth-child(3){
+            grid-row: 2/4 ;
+            grid-column: 2/4;
+        }
+
+        .right:nth-child(4){
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+
+        .bottom:nth-child(5){
+            grid-row: 4/5;
+            grid-column: 1/5;
         }
 
         .left,
@@ -32,66 +51,62 @@
             border: 3px solid;
             border-color: rgb(154, 195, 227);
             align-content: center;
+            text-align: center;
+            color: white;
         }
 
         .top {
             height: 50px;
-            width: 99.35%;
             border: 3px solid;
-            float: top;
             background-color: rgb(0, 73, 157);
             border-color: rgb(154, 195, 227);
             align-content: center;
+            text-align: center;
+            color: white;
         }
 
         .bottom {
             height: 50px;
-            width: 99.35%;
             border: 3px solid;
-            float: bottom;
             background-color: rgb(0, 73, 157);
             border-color: rgb(154, 195, 227);
             align-content: center;
+            text-align: center;
+            color: white;
         }
 
         .right {
-            flex-grow: 1;
             background-color: rgb(0, 119, 255);
         }
 
         .left {
-            flex-grow: 1;
             background-color: rgb(0, 119, 255);
+            
         }
 
         .middle {
-            flex-grow: 3;
             background-color: gray;
         }
     </style>
-
 </head>
 
 <body>
-
     <div class="outer">
 
         <div class="top">
             <b>Holy Grail Layout</b>
         </div>
 
-        <div class="inner">
-            <div class="left">
-                <b>Nav&nbsp;&nbsp;&nbsp;&nbsp;</b>
-            </div>
+        <div class="left">
+            <b>Nav</b>
+        </div>
 
-            <div class="middle">
-                <b>Main content</b>
-            </div>
+        <div class="middle">
+            <b>Main content</b>
+        </div>
 
-            <div class="right">
-                <b>Sidebar</b>
-            </div>
+        <div class="right">
+            <b>Sidebar</b>
         </div>
 
         <div class="bottom">
@@ -99,7 +114,6 @@
         </div>
 
     </div>
-
 </body>
 
 </html>
